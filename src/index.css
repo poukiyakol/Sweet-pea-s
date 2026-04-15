@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-sage: #7D9F72;
+  --color-cream: #FFF8F0;
+  --color-rose: #E8A598;
+  --color-earth: #4A3728;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-earth font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.floral-pattern {
+  background-image: radial-gradient(var(--color-rose) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  opacity: 0.1;
+}
